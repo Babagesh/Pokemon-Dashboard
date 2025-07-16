@@ -43,7 +43,6 @@ const Dashboard = ({pokemons}) => {
             }
             setFilteredPokemon(pokemonFilter)
             
-            
             const count = pokemonFilter.length;
             if (count > 0) {
                 const totalHeight = pokemonFilter.reduce((sum, p) => sum + p.height, 0);
@@ -54,7 +53,6 @@ const Dashboard = ({pokemons}) => {
                     Weight: Math.round(totalWeight / count)
                 });
             } else {
-                
                 updateStatistics({ Count: 0, Height: 0, Weight: 0 });
             }
             },[search, filter, pokemons])
