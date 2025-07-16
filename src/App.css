@@ -1,0 +1,62 @@
+.App{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.navigation-sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 10%;
+  margin-left: 2%;
+  width: 18vw;
+  height: 100vh;
+  border: 1px solid red;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  width: 65vw;
+
+}
+
+.statistics{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10vw;
+}
+
+.dashboard{
+
+}
+
+.inputs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+  margin: 5% 0;
+}
+
+.attributes{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+.output ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.output li p {
+  display: inline-block; /* Allows width and sits on the same line */
+  width: 25%;            /* Each column takes up a quarter of the space */
+  text-align: center;    /* Centers the text */
+  vertical-align: middle;/* Helps align the image with text */
+  font-size: 16px;       /* Reset font size from the li */
+}
