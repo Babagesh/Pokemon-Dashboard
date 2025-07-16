@@ -54,7 +54,7 @@ GIF created with Loom
 
 ## Notes
 
-Had a challenge trying to figure out how to lift up state.
+Had a challenge trying to figure out how to lift up state. Still need to learn and ended up migrating over a lot of components into Dashboard.
 
 ## License
 
