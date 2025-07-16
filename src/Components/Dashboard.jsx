@@ -61,9 +61,6 @@ const Dashboard = ({pokemons}) => {
             },[search, filter, pokemons])
     return (
         <div className = "dashboard">
-            
-            {/* --- START: NEW CODE TO ADD --- */}
-            {/* This displays the statistics at the top of the dashboard */}
             <div className = "statistics">
                 <div className = "statistic">
                     <p> {statistics.Count} </p>
