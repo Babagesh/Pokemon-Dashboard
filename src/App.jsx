@@ -7,9 +7,6 @@ export default function App()
 
   const [pokemon, updatePokemon] = useState([])
 
-
-  
-
   useEffect(() => {
     const getPokemon = async () => {
       const response = await fetch("https://pokeapi.co/api/v2/pokemon");

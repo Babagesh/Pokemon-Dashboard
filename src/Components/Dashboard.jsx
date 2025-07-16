@@ -75,7 +75,6 @@ const Dashboard = ({pokemons}) => {
                     <h1> Average Weight </h1>
                 </div>
             </div>
-            {/* --- END: NEW CODE TO ADD --- */}
 
             <div className = "inputs">
                 <input 
