@@ -43,8 +43,7 @@ const Dashboard = ({pokemons}) => {
             }
             setFilteredPokemon(pokemonFilter)
             
-            // --- START: NEW CODE TO ADD ---
-            // This calculates the statistics based on the filtered list
+            
             const count = pokemonFilter.length;
             if (count > 0) {
                 const totalHeight = pokemonFilter.reduce((sum, p) => sum + p.height, 0);
