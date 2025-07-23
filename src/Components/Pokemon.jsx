@@ -1,6 +1,7 @@
 import {useParams} from 'react-router-dom'
 import {useState, useEffect} from 'react'
-import PokemonChart from './PokemonChart'
+import PokemonStatsChart from './PokemonStatsChart'
+import PokemonTypesChart from './PokemonTypesChart.jsx'
 
 const Pokemon = () => {
     const {pokemon} = useParams();
@@ -16,8 +17,9 @@ const Pokemon = () => {
                 name: pokemon, // string
                 moves: json['moves'], // array
                 stats: json['stats'], //array
-                abilities: json['abilities'],
-                image: json['sprites']['front_default']
+                abilities: json['abilities'], // array
+                image: json['sprites']['front_default'], //string
+                types: json['types'] //array
             })
         }
         getPokemonDetails().catch(console.error)
@@ -45,9 +47,15 @@ const Pokemon = () => {
                             {move['move']['name']}
                         </li>)
                 }</ul>
-                <PokemonChart 
-                    
+                <PokemonStatsChart 
+                    stats = {pokemonDetails['stats']}
+                    pokemon = {pokemon}
                 />
+                <PokemonTypesChart 
+                    types = {pokemonDetails['types']}
+                    pokemon = {pokemon}
+                />
+
             </div>)
         }
         </div>
