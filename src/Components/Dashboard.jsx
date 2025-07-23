@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 const Dashboard = ({pokemons}) => {
 
     const [search, updateSearch] = useState("");
@@ -109,7 +110,7 @@ const Dashboard = ({pokemons}) => {
                                 <p>{pokemon['name']}</p>
                                 <p>{pokemon['weight']}</p>
                                 <p>{pokemon['height']}</p>
-                                <img src={pokemon['sprites']['front_default']}/>
+                                <p><Link to={`/pokemonPage/${pokemon['name']}`}> <img src={pokemon['sprites']['front_default']} alt={pokemon.name}/> </Link></p>
                             </li>
                     )
                 }

@@ -25,18 +25,10 @@ export default function App()
     getPokemon().catch(console.error)
 }, [])
   return (
-    <div className = "App">
-      <div className = "navigation-sidebar">
-        <h1> Pokedata</h1>
-        <p> Dashboard </p>
-        <p> Search</p>
-        <p> About</p>
-      </div>
       <div className = "main">
         <Dashboard 
           pokemons = {pokemon}
         />
       </div>
-    </div>
   );
 }
