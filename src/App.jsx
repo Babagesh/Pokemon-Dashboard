@@ -9,7 +9,7 @@ export default function App()
 
   useEffect(() => {
     const getPokemon = async () => {
-      const response = await fetch("https://pokeapi.co/api/v2/pokemon");
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100");
       const json = await response.json();
       const pokemonList = json.results;
       const infoList = [];
